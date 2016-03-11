@@ -1,0 +1,26 @@
+{
+  "name": "engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "typings": "./node_modules/.bin/typings",
+    "tsc": "./node_modules/.bin/tsc",
+    "tsc:w": "./node_modules/.bin/tsc -w",
+    "lite": "./node_modules/.bin/lite-server",
+    "postinstall": "npm run typings install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.1.0",
+    "typescript": "^1.8.7",
+    "typings": "^0.7.7"
+  },
+  "dependencies": {
+    "babylonjs": "^2.3.0"
+  }
+}
